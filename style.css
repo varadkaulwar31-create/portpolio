@@ -1,105 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1c2331;
+    color: white;
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: white;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #222;
-}
-
-/* Hero */
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-  background: #111;
-  color: white;
-}
-
-/* Sections */
-section {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* Projects */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 40px;
-  text-align: center;
-  border-radius: 8px;
-}
-.social-icons {
-  display: flex;
-  gap: 30px; /* space between icons */
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-icons img {
-  width: 50px; /* icon size */
-  height: 50px;
-  transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2); /* hover effect */
-}
-
-#projects {
-    padding: 40px;
+/* Header */
+header {
+    background: black;
+    padding: 30px;
     text-align: center;
 }
 
-.project-container {
+/* Main content boxes */
+.section-box {
+    background: black;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+/* Project buttons */
+.project-buttons {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-.project-card {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-}
-
-.project-card a {
-    color: #00adb5;
+.project-buttons a {
+    background: #00bcd4;
+    color: black;
+    padding: 12px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project-buttons a:hover {
+    background: #00e5ff;
+}
+
+/* WhatsApp link */
+.whatsapp {
+    font-size: 18px;
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
 }
