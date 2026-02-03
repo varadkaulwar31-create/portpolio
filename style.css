@@ -72,3 +72,59 @@ footer {
     background: black;
     margin-top: 20px;
 }
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Header center */
+.header-content {
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+.skills {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    background: #00bcd4;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
