@@ -8,10 +8,12 @@ body {
 /* Boxes */
 .section-box {
     background: black;
-    margin: 25px;
-    padding: 25px;
+    margin: 40px auto;
+    padding: 30px;
     border-radius: 10px;
+    max-width: 1000px;
 }
+
 
 /* Headings */
 h2 {
@@ -106,7 +108,9 @@ footer {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 .project-card {
     background: #111;
@@ -127,4 +131,97 @@ footer {
     border-radius: 20px;
     font-weight: bold;
 }
+
+.project-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-buttons a {
+    background: #00bcd4;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .section-box {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+
+.section-box {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-buttons a:hover {
+    background: #00e5ff;
+    transform: scale(1.05);
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.skills span {
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
+}
+
 
